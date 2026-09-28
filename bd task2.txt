@@ -1,0 +1,17 @@
+
+2.1) select * from city limit 189, 10; // 199 всего
+
+2.2) select * from city order by population limit 189, 10;
+
+2.3) select title from channel where category=3 or category=4;
+category = 3 // pozanavatelnie
+category = 4 // spotvnie
+
+2.4) select title from channel where keywords is not null;
+
+2.5) select title from channel where category is null or orderId>10;
+или category=0, =1, =10; =13;
+
+2.6) select date, start, info from event where title='Доктор Хаус' and date between '2014-06-01' and '2014-06-31'\G;
+
+2.7) 
